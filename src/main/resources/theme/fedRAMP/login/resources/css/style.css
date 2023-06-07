@@ -1,0 +1,11 @@
+.login-pf body {
+    background: url("../img/red-hat-background-logo.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Globals */
+.brand {
+    height: 35px;
+}
+  
