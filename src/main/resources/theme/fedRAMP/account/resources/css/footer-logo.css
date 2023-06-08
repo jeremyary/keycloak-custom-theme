@@ -1,0 +1,28 @@
+.footer-top .rh-logo {
+  width: 108px;
+  height: 26px;
+}
+@media (min-width: 992px) {
+.footer-top .rh-logo {
+    margin-top: 0.125em;
+    width: 98px;
+    height: 23px;
+  }
+}
+/* This block adds a svg height for IE 11
+   IE 11 does not support the @supports css rule,
+   so we're adding a pixel height here and then
+   overwriting it for newer browsers that do
+   support the @supports rule
+*/
+@media (min-width: 1200px) {
+  .footer-top .rh-logo {
+    width: 118px;
+    height: 28px;
+  }
+}
+@supports (height: auto) {
+  .footer-top .rh-logo {
+    height: auto !important;
+  }
+}

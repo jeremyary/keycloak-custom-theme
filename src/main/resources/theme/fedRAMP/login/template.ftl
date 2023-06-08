@@ -70,7 +70,7 @@
         ${msg("allRedHatTitle")}
 </button>
 <pfe-navigation-dropdown dropdown-width="full">
-<site-switcher lang=' en' class="pf-u-px-xl">
+<site-switcher lang='en' class="pf-u-px-xl">
             </site-switcher>
             </pfe-navigation-dropdown>
             </div>
