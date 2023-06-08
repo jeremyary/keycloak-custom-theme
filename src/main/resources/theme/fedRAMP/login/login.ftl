@@ -86,7 +86,7 @@
                 </ul>
             </div>
         </#if>
-     <#elseif section = "loginFooter" >
+     <#elseif section = "loginContainerFooter" >
          <#if (realm.password && realm.registrationAllowed && !registrationDisabled??) || realm.resetPasswordAllowed>
             <div class="pf-c-login__main-footer">
                 <div class="pf-c-login__main-footer-band">
@@ -107,5 +107,29 @@
                 </div>
             </div>
         </#if>
+        <#elseif section = "loginContainerClass">
+            class="pf-c-login__container"
+        <#elseif section = "loginFooter" >
+            <div class="pf-c-login__footer">
+                <div id="rh-logo-container">
+                    <img id="rh-logo" class="pf-c-brand" alt="Red Hat Logo" src="${url.resourcesPath}/img/RHLogo_white.svg">
+                </div>
+                <p class="pf-u-font-size-md">
+                    <font size="-1">You are accessing a U.S. Government (USG) Information System (IS)
+                        that is provided for USG-authorized use only., By using this IS (which includes any device attached to this IS),
+                        you consent to the following conditions:,<br> -The USG routinely intercepts and monitors communications on this
+                        IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and
+                        defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.,
+                        <br>-At any time, the USG may inspect and seize data stored on this IS., <br>-Communications using, or data
+                        stored on, this IS are not private, are subject to routine monitoring, interception, and search,
+                        and may be disclosed or used for any USG-authorized purpose., <br>-This IS includes security measures
+                        (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.,
+                        <br>-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative
+                        searching or monitoring of the content of privileged communications, or work product, related to personal
+                        representation or services by attorneys, psychotherapists, or clergy, and their assistants.
+                        Such communications and work product are private and confidential.
+                    </font>
+                </p>
+            </div>
     </#if>
 </@layout.registrationLayout>
