@@ -1,0 +1,28 @@
+.masthead .rh-logo {
+  width: 96px;
+  height: 23px;
+}
+@media (min-width: 768px) {
+  .masthead .rh-logo {
+    width: 108px;
+    height: 26px;
+  }
+}
+/* This block adds a svg height for IE 11
+   IE 11 does not support the @supports css rule,
+   so we're adding a pixel height here and then
+   overwriting it for newer browsers that do
+   support the @supports rule
+*/
+
+@media (min-width: 992px) {
+  .masthead .rh-logo {
+    width: 150px;
+    height: 36px;
+  }
+}
+@supports (height: auto) {
+  .masthead .rh-logo {
+    height: auto !important;
+  }
+}

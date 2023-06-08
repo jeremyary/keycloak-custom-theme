@@ -1,6 +1,6 @@
 {
     "themes": [{
         "name" : "fedRAMP",
-        "types": [ "login" ]
+        "types": [ "login", "account" ]
     }]
 }
