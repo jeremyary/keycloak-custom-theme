@@ -74,14 +74,6 @@
             </site-switcher>
             </pfe-navigation-dropdown>
             </div>
-            <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
-                <div slot="account">
-                    <a href="${url.registrationUrl}">
-                        <pfe-icon icon="web-icon-user" pfe-size="md" aria-hidden="true"></pfe-icon>
-                        ${msg("registerTitle")}
-                    </a>
-                </div>
-            </#if>
             </pfe-navigation>
             <div class="rhd-mobile-overlay"></div>
             <main id="rh-login-card" role="main">
